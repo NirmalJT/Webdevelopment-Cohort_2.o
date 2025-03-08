@@ -1,0 +1,132 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  
+}
+
+nav,ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+li{
+    list-style: none;
+    color: rgb(99, 92, 92);
+    font-size: 15px;
+    cursor: pointer;
+    
+    
+}
+li:hover{
+    color: rgb(159, 159, 255);
+}
+nav{
+    padding-top: 18px;
+}
+.separation{
+    background-color: rgb(244, 238, 238);
+    height: 1.8px;
+    margin-top: 25px;
+}
+
+.icon{
+    display: flex
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+.text h1{
+    color: rgb(65, 64, 64);
+    font-size: 40px;
+}
+.text p{
+    font-size: larger;
+    color: rgb(65, 64, 64);
+}
+.btn{
+    background-color: #387ed1;
+    border-radius: 3px;
+    padding:8px 30px;
+    border: none;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:#0569e4 ;
+}
+h2{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 35px;
+    
+}
+.Calculator{
+display: flex;
+flex-direction: column;
+width: 600px;
+border: 1px solid grey;
+/* box-shadow: 0px 0px 97px #9797e7; */
+border-radius: 10px;
+padding: 30px;
+/* margin-top: 20px; */
+
+}
+.sec1{
+    height: 450px;
+     }
+.input1{
+     border-radius: 5px;
+     width: 45%;
+     padding: 7px;
+     outline: none;
+     border: 2px solid rgb(136, 136, 223);
+
+
+  }
+  .input1:hover{
+    border: 3px solid rgb(89, 89, 246);
+  }
+  .btncal{
+    margin-top: 10px;
+  }
+  .result{
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 200px;
+    height: 260px;
+    font-weight: bold;
+  }
+  .colContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  #result{
+    color: rgb(181, 32, 32)
+
+  }
