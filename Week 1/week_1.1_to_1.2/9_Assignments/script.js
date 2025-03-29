@@ -8,7 +8,7 @@ const runCount = () => {
     clearInterval(fn);
   }
 };
-// const fn = setInterval(runCount, 1000);
+const fn = setInterval(runCount, 1000);
 // Calculate the time it takes between a setTimeout call and the inner function actually running
 let start = performance.now();
 const calculate = () => {
