@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import { Header, Footer } from "./components/index";
 import "./App.css";
 import { Outlet } from "react-router-dom";
 import authService from "./appwrite/auth";
