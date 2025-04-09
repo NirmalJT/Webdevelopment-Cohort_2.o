@@ -47,10 +47,12 @@ function Signin() {
             {...register("email", {
               required: true,
               //pattern
-              validate: (value) =>
-                //call api to check acually exist or not
-                /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) ||
-                "Email address must be a valid address",
+              validate: {
+                matchPatern: (value) =>
+                  //call api to check acually exist or not
+                  /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) ||
+                  "Email address must be a valid address",
+              },
             })}
           />
           <Input
@@ -61,7 +63,7 @@ function Signin() {
               required: true,
             })}
           />
-          <Button>Signin</Button>
+          <Button type="submit">Signin</Button>
         </form>
       </div>
     </>

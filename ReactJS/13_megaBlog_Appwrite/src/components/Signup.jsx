@@ -47,10 +47,12 @@ function Signup() {
             {...register("email", {
               required: true,
               //pattern
-              validate: (value) =>
-                //call api to check acually exist or not
-                /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) ||
-                "Email address must be a valid address",
+              validate: {
+                matchPatern: (value) =>
+                  //call api to check acually exist or not
+                  /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) ||
+                  "Email address must be a valid address",
+              },
             })}
           />
           <Input
@@ -67,11 +69,13 @@ function Signup() {
             type="password"
             {...register("password", {
               required: true,
-              validate: (value) =>
-                /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?#&^_-])[A-Za-z\d@$!%*?#&^_-]{8,}$/.test(
-                  value
-                ) ||
-                "Password must be 8+ characters, include uppercase, lowercase, number, and special character",
+              validate: {
+                matchPatern: (value) =>
+                  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?#&^_-])[A-Za-z\d@$!%*?#&^_-]{8,}$/.test(
+                    value
+                  ) ||
+                  "Password must be 8+ characters, include uppercase, lowercase, number, and special character",
+              },
             })}
           />
           <Button>Signup</Button>
