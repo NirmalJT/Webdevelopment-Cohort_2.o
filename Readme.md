@@ -11,13 +11,18 @@ This repo contains my notes, code, and practice exercises ,projects while learni
 - Topic 1
 - Topic 2
 
-## 📝 Notes
-- 
-- Useful resources:
-  - [Resource Name](https://link.com)
+## 📝 Notes / Resources
+- ## YouTube Channel:
+  - [Code-With-Harry Sigma Webdev Course](https://youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&si=nCi6mQyMnGXQvfN2)
+  - [Chai Aur ReactJs Course](https://youtube.com/playlist?list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&si=eWx-oXDR73gcjRQt)
 ```bash
 # clone the repo
 git clone https://github.com/NirmalJT/Webdevlopment-Learning.git
 
 # install dependencies
 npm install
+```
+# Author
+This repo is maintained by Nirmal Jyoti Thakuria.
+
+# Happy Coding 🎉
