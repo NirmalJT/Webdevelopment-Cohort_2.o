@@ -1,1 +1,0 @@
-//passing funtion as an argument is called callback
