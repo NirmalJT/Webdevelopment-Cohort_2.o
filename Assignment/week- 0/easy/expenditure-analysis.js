@@ -13,13 +13,6 @@
   Output - [{ category: 'Food', totalSpent: 10 }] // Can have multiple categories, only one example is mentioned here
 */
 
-function calculateTotalSpentByCategory(transactions) {
-  let Output=[{}]
-  transactions.map((Element)=>{
-
-  })
-}
-
 let transactions = [
   {
     id: 1,
@@ -58,4 +51,26 @@ let transactions = [
   },
 ];
 
-calculateTotalSpentByCategory(transactions);
+function calculateTotalSpentByCategory(transactions) {
+  let categoryTotal = {};
+
+  for (let transaction of transactions) {
+    let category = transaction.category;
+    let price = transaction.price;
+
+    if (categoryTotal[category]) {
+      categoryTotal[category] += price;
+    } else {
+      categoryTotal[category] = price;
+    }
+  }
+
+  let result = [];
+  for (let category in categoryTotal) {
+    result.push({ category: category, totalSpent: categoryTotal[category] });
+  }
+
+  return result;
+}
+
+console.log(calculateTotalSpentByCategory(transactions));

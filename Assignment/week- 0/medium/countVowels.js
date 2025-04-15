@@ -6,7 +6,18 @@
 */
 
 function countVowels(str) {
-    
+  let vowels = ["a", "e", "i", "o", "u"];
+  let string = str.toLowerCase();
+  let countVowel = 0;
+  for (let i = 0; i < vowels.length; i++) {
+    for (let j = 0; j < string.length; j++) {
+      if (vowels[i] === string[j]) {
+        countVowel += 1;
+      }
+    }
+  }
+  return countVowel;
 }
+let str = "NirmalJyotiThakuria";
 
-module.exports = countVowels;
+console.log(countVowels(str));

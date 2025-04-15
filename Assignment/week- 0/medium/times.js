@@ -8,6 +8,34 @@ Hint - use Date class exposed in JS
 There is no automated test for this one, this is more for you to understand time goes up as computation goes up
 */
 
+//using Date.now()
 function calculateTime(n) {
-    return 0.01;
+  let start_time = Date.now();
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    sum += i;
+  }
+  let end_time = Date.now();
+  let time_taken = (end_time - start_time) / 1000;
+  console.log(`Time taken to complete the sum : ${time_taken}`);
+  return sum;
 }
+//using performance.now for more preicise time
+function calculateTime_method2(n) {
+  let start_time = performance.now();
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    sum += i;
+  }
+  let end_time = performance.now();
+  let time_taken = end_time - start_time;
+  console.log(`Time taken to complete the sum : ${time_taken}`);
+  return sum;
+}
+
+console.log(`Total sum is : ${calculateTime(100)}`);
+console.log(`Total sum is : ${calculateTime(100000)}`);
+console.log(` Total sum is : ${calculateTime(1000000000)}`);
+console.log(`Total sum is : ${calculateTime_method2(100)}`);
+console.log(`Total sum is : ${calculateTime_method2(100000)}`);
+console.log(` Total sum is : ${calculateTime_method2(1000000000)}`);

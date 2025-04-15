@@ -4,7 +4,14 @@
 */
 
 function isPalindrome(str) {
-  return true;
+  let string = str.toLowerCase();
+  let reverseStr = string.split("").reverse().join("");
+  if (string === reverseStr) {
+    return true;
+  } else {
+    return false;
+  }
 }
+let str = "Nan";
 
-module.exports = isPalindrome;
+console.log(isPalindrome(str));

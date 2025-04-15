@@ -6,6 +6,10 @@
 <br>
 ~~this strike through~~ **999**
 
+# For more github and linux command you can see the notion notes
+
+
+
 # Links
 
 [Google](https://google.com "Click me")
