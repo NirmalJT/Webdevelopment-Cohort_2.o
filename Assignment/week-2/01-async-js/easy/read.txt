@@ -1,0 +1,1 @@
+i am reading the text using js fs library

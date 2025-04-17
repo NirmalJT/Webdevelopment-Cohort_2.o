@@ -1,0 +1,1 @@
+i am written text using fs library js hello
